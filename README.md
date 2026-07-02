@@ -511,16 +511,6 @@ VPC1> ping 202.50.73.66
 
 ---
 
-### Troubleshooting Rápido
-
-| Síntoma | Causa probable | Solución |
-|---|---|---|
-| Spokes no se registran en NHRP | `tunnel key` diferente o `nhrp authentication` distinto | Verificar que Hub y Spokes tengan key `1000` y auth `ITLA2025` |
-| EIGRP no forma vecindad | Split-horizon activo en Hub | Confirmar `no ip split-horizon eigrp 100` en `Tunnel0` del Hub |
-| Rutas via Hub en vez del Spoke | Falta `no ip next-hop-self` o `ip nhrp shortcut` | Agregar ambos y ejecutar `clear ip route *` en los Spokes |
-| IPSec no sube entre Spokes | PSK no es wildcard | Confirmar `crypto isakmp key ITLA2025Arlene address 0.0.0.0` |
-| Tunnel `down/down` | `tunnel source` incorrecto | Verificar que apunte a `Ethernet0/0` (interfaz WAN conectada a Neto) |
-
 ---
 
 ## 7. Capturas de Pantalla
