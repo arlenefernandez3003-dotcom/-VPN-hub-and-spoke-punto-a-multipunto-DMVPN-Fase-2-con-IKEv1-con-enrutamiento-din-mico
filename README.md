@@ -526,7 +526,7 @@ VPC1> ping 202.50.73.66
 
 ## 8. Video Demostrativo
 
-🎥 **[Ver en YouTube — enlace pendiente](#)**
+🎥 **[Ver en YouTube — enlace pendiente](https://youtu.be/fNVYNdV0jZc)**
 
 
 ---
